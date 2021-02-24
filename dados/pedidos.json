@@ -5,7 +5,7 @@
         "destinatario": "Jose",
         "status": "Depositado",
         "email": "jose@outlook.com",
-        "telefone": "11111111",
+        "telefone": "11 98452 4412",
         "avaliacao": "Ótimo",
         "pin": "458219",
         "dtacriacao": "23/02/2021"
@@ -16,7 +16,7 @@
         "destinatario": "Maria",
         "status": "Retirado",
         "email": "Maria@outlook.com",
-        "telefone": "11111111",
+        "telefone": "11 98452 4412",
         "avaliacao": "Ótimo",
         "pin": "458219",
         "dtacriacao":"23/02/2021"
@@ -27,7 +27,7 @@
         "destinatario": "Renato",
         "status": "Retirado",
         "email": "renato@outlook.com",
-        "telefone": "11111111",
+        "telefone": "11 98452 4412",
         "avaliacao": "Ótimo",
         "pin": "458219",
         "dtacriacao":"23/02/2021"
@@ -38,7 +38,7 @@
         "destinatario": "Emerson",
         "status": "Depositado",
         "email": "emerson@outlook.com",
-        "telefone": "11111111",
+        "telefone": "11 98452 4412",
         "avaliacao": "Ótimo",
         "pin": "458222",
         "dtacriacao":"23/02/2021"
@@ -50,7 +50,7 @@
         "status": "Atrasado",
         "email": "email@newpost.com",
         "telefone": "11 98452 4412",
-        "avaliacao": "Ótimo",
+        "avaliacao": "Ruim",
         "pin": "458223",
         "dtacriacao":"23/02/2021"
     },
@@ -116,7 +116,7 @@
         "status": "Atrasado",
         "email": "email@newpost.com",
         "telefone": "11 98452 4412",
-        "avaliacao": "Ótimo",
+        "avaliacao": "Ruim",
         "pin": "458223",
         "dtacriacao":"23/02/2021"
     }
