@@ -5,11 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
 
-  
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap5.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -34,7 +30,7 @@
                 <li class="menu_item">
                     <a href="pedidos.html">
                         <i class="fas fa-shopping-basket"></i>
-                        <p >Pedidos</p>
+                        <p>Pedidos</p>
                     </a>
                 </li>
                 <li class="menu_item">
@@ -68,77 +64,27 @@
             <section class="cabecalho">
                 <h1 class="text-center titulo-principal p-5">Olá, Drogaria São Paulo!</h1>
 
-                <div class="text-center">
-                    <ul class="categorias">
-                        <a onclick="total();" href="#total_filtro">
-                            <li class="categoria_item">
-                                <i class="fas fa-archive"></i>
-                                <p><strong id="total_pedidos">0</strong> Total </p>
-                            </li>
-                        </a>
 
-                        <a onclick="depositado();" href="#depositado">
-                            <li class="categoria_item">
-                                <i class="fas fa-folder-plus"></i>
-                                <p><strong id="total_depositados">0</strong> Depositados </p>
-                            </li>
-                        </a>
 
-                        <a onclick="atrasado();" href="#atrasado">
-                            <li class="categoria_item">
-                                <i class="fas fa-folder-minus"></i>
-                                <p><strong id="total_atrasados">0</strong> Atrasados </p>
-                            </li>
-                        </a>
-
-                        <a onclick="retirado();" href="#retirado">
-                            <li class="categoria_item">
-                                <i class="fas fa-folder-open"></i>
-                                <p><strong id="total_retirados">0</strong> Retirados </p>
-                            </li>
-                        </a>
-
-                    </ul>
+                <div class="container text-center ">
+                    <h2 class="text-center">Gerar QR-CODE</h2>
+                    <div class="novo-pedido">
+                        <input class="inputPadrao" placeholder="Número do pedido" type="text">
+                        <button class="btn_padrao  text-center">Gerar QR-CODE
+                    </div>
+                    <h2 class="text-center">Gerar Etiqueta</h2>
+                    <div class="novo-pedido">
+                        <input class="inputPadrao" placeholder="Número do pedido" type="text">
+                        <button class="btn_padrao  text-center">Gerar Etiqueta
+                    </div>
                 </div>
 
 
-                <div class="filtro text-center">
-                    <i class="fas fa-search"></i>
-                    <!-- <input id="filter" class="text-center" placeholder="Filtro" type="text"> -->
-                    <h2 class="pt-5">Filtro</h2>
-                    <p id="total_filtro">0</p>
-                </div>
 
             </section>
-
-            <div class="pedidos pt-5" id="pedidos">
-                <h1 class="text-center">Pedidos</h1>
-                <div id="resultado">carregando...</div>
-                <div class="tabelaPedidos container">
-
-                    <table id="tabela"
-                        class="table table-striped table-dark table-bordered table-hover table-condensed ">
-                        <thead>
-                            <tr>
-                                <th>Locker</th>
-                                <th>Cliente</th>
-                                <th>Pedido</th>
-                                <th>Telefone</th>
-                                <th>Data de criação</th>
-                                <th>Status</th>
-                                <th>Avaliação</th>
-                                <th>Pin</th>
-                            </tr>
-
-                        </thead>
-                        <tbody id="resultadoTabela">
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
         </div>
     </header>
+
 
     <!-- Modal Troca de senha-->
     <div class="modal fade" id="alteracaoSenha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -189,16 +135,16 @@
         </div>
     </div>
 
-   
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
 
     <script src="assets/js/script.js"></script>
-
- 
-
+    
 </body>
 
 </html>

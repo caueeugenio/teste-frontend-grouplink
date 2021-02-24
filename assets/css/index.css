@@ -1,7 +1,7 @@
 :root {
     --cor_fundo: #242424;
     --cor_menu: #121212;
-    --cor_titulo_principal: whitesmoke;
+    --cor_texto_padrao: whitesmoke;
     --cor_padrao: #9BCDD7;
     --cor_link_inativo: #6C757D;
     --cor_link_ativo: #D34544;
@@ -11,7 +11,7 @@
     color: var(--cor_padrao);
 }
 
-body {
+body, .modal-content {
     background-color: var(--cor_fundo);
 }
 
@@ -26,12 +26,14 @@ body {
     padding: 1em;
 }
 
-.menu_item p, i{
+.menu_item p, i {
     color: var(--cor_link_inativo);
 }
-.menu_item p:hover, i:hover{
+
+.menu_item p:hover, i:hover {
     color: var(--cor_padrao);
 }
+
 .categorias {
     padding: 0;
     display: flex;
@@ -93,24 +95,43 @@ a:link {
     box-shadow: 0 0 0.5rem var(--cor_padrao);
 }
 
+.inputPadrao {
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 69px;
+    background: none;
+    margin: 0.5em;
+    color: var(--cor_texto_padrao);
+}
+
+.pedidos-selecao {
+    display: flex;
+    flex-direction: column;
+}
+.novo-pedido{
+    display: flex;
+    flex-direction: column;
+}
+
 .tabelaPedidos {
     display: none;
 }
 
-.paginate_button {
+.paginate_button, .btn_padrao {
     cursor: pointer;
-    color: white;
+    color: var(--cor_texto_padrao);
     text-decoration: none;
     border: 1px solid var(--cor_padrao);
     padding: 0.5em;
     box-shadow: 0 0 0.5rem var(--cor_padrao);
 }
 
-.dataTables_filter input {
+.dataTables_filter input, .btn_padrao {
     border: none;
     border-radius: 10px;
     background-color: transparent;
     box-shadow: 0 0 0.5rem var(--cor_padrao);
+    margin: 0.5em;
 }
 
 @media only screen and (min-width: 600px) {
@@ -149,16 +170,18 @@ a:link {
     #resultado {
         display: none;
     }
-    .novo-pedido {
-        width: 300px;
-        padding: 0;
-        border: 1px solid var(--cor_padrao);
-        border-radius: 100px;
-        box-shadow: 0 0 0.5rem var(--cor_padrao);
-    }
+   
     .filtro input {
         margin: 1em;
         font-size: 20pt;
+    }
+    .pedidos-selecao {
+        flex-direction: row;
+        align-items: center;
+    }
+    .novo-pedido {
+
+     
     }
 }
 

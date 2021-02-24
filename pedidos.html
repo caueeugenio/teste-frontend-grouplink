@@ -9,7 +9,12 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
 
-  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.22/pdfmake.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+
+    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap5.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -34,7 +39,7 @@
                 <li class="menu_item">
                     <a href="pedidos.html">
                         <i class="fas fa-shopping-basket"></i>
-                        <p >Pedidos</p>
+                        <p>Pedidos</p>
                     </a>
                 </li>
                 <li class="menu_item">
@@ -68,46 +73,27 @@
             <section class="cabecalho">
                 <h1 class="text-center titulo-principal p-5">Olá, Drogaria São Paulo!</h1>
 
-                <div class="text-center">
-                    <ul class="categorias">
-                        <a onclick="total();" href="#total_filtro">
-                            <li class="categoria_item">
-                                <i class="fas fa-archive"></i>
-                                <p><strong id="total_pedidos">0</strong> Total </p>
-                            </li>
-                        </a>
 
-                        <a onclick="depositado();" href="#depositado">
-                            <li class="categoria_item">
-                                <i class="fas fa-folder-plus"></i>
-                                <p><strong id="total_depositados">0</strong> Depositados </p>
-                            </li>
-                        </a>
 
-                        <a onclick="atrasado();" href="#atrasado">
-                            <li class="categoria_item">
-                                <i class="fas fa-folder-minus"></i>
-                                <p><strong id="total_atrasados">0</strong> Atrasados </p>
-                            </li>
-                        </a>
+                <div class="container text-center ">
+                    <div class="pedidos-selecao">
+                        <label>Selecione a loja: </label>
+                        <select class="inputPadrao text-center" name="lojas">
+                            <option value="todas">Todas as lojas</option>
+                            <option disabled value="loja1">Loja 1</option>
+                            <option disabled value="loja2">Loja 2</option>
+                            <option disabled value="loja3">Loja 3</option>
+                        </select>
+                        <label>Inicio</label><input class="inputPadrao text-center" placeholder="24/02/2021"
+                            type="text">
+                        <label>Fim</label><input class="inputPadrao text-center" placeholder="24/02/2021" type="text">
+                        <a class="btn_padrao" href="#">OK</a>
 
-                        <a onclick="retirado();" href="#retirado">
-                            <li class="categoria_item">
-                                <i class="fas fa-folder-open"></i>
-                                <p><strong id="total_retirados">0</strong> Retirados </p>
-                            </li>
-                        </a>
-
-                    </ul>
+                        <a class="btn_padrao" id="exportXLS">Exportar excel</a>
+                        <a class="btn_padrao" id="exportPDF">Exportar pdf</a>
+                    </div>
                 </div>
 
-
-                <div class="filtro text-center">
-                    <i class="fas fa-search"></i>
-                    <!-- <input id="filter" class="text-center" placeholder="Filtro" type="text"> -->
-                    <h2 class="pt-5">Filtro</h2>
-                    <p id="total_filtro">0</p>
-                </div>
 
             </section>
 
@@ -132,6 +118,8 @@
 
                         </thead>
                         <tbody id="resultadoTabela">
+
+
                         </tbody>
                     </table>
                 </div>
@@ -139,6 +127,8 @@
 
         </div>
     </header>
+
+
 
     <!-- Modal Troca de senha-->
     <div class="modal fade" id="alteracaoSenha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -189,15 +179,15 @@
         </div>
     </div>
 
-   
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-    crossorigin="anonymous"></script>
-
-    <script src="assets/js/script.js"></script>
 
  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+
+    <script src="assets/js/scriptExportacao.js"></script>
 
 </body>
 
