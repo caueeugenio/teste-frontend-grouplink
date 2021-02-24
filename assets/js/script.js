@@ -80,7 +80,7 @@ function dataTable() {
                 "language": {
                     "lengthMenu": "Mostrando _MENU_ registros por página.",
                     "zeroRecords": "Nada encontrado... desculpe",
-                    "info": "Mostrando página _PAGE_ of _PAGES_",
+                    "info": "Mostrando página _PAGE_ de _PAGES_",
                     "infoEmpty": "Nenhum registro encontrado.",
                     "infoFiltered": "(filtrado de _MAX_ no total.)"
                 },

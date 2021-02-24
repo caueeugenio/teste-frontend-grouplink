@@ -14,7 +14,7 @@ $("exportPDF").click(function (e) {
                     width: 500
                 }]
             };
-            pdfMake.createPdf(docDefinition).download("customer-details.pdf");
+            pdfMake.createPdf(docDefinition).download("arquivo.pdf");
         }
     });
 });

@@ -5,6 +5,7 @@
     --cor_padrao: #9BCDD7;
     --cor_link_inativo: #6C757D;
     --cor_link_ativo: #D34544;
+    --cor_input_padrao:gray;
 }
 
 * {
@@ -97,7 +98,7 @@ a:link {
 
 .inputPadrao {
     padding: 15px;
-    border: 1px solid gray;
+    border: 1px solid var(--cor_input_padrao);
     border-radius: 69px;
     background: none;
     margin: 0.5em;
@@ -179,21 +180,4 @@ a:link {
         flex-direction: row;
         align-items: center;
     }
-    .novo-pedido {
-
-     
-    }
 }
-
-/* @media only screen and (width: 1280px) {
-   
-    .menu {
-       
-        width: 50px;
-      
-    }
-
-    .menu_item i {
-        font-size: 15pt;
-    }
-} */
